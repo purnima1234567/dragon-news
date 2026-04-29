@@ -38,8 +38,9 @@ const Navbar = () => {
           <Image
            src={user.image || userAvatar}
             alt="User avatar"
-            width={60}
-            height={60}
+            width={40}
+            height={40}
+            className="rounded-full"
           />
           <button className="btn bg-purple-500 text-white" onClick={async () => await authClient.signOut()}>Logout</button>
         </div>
